@@ -38,7 +38,7 @@ export function Nav() {
       >
         <nav className="flex items-center justify-between px-5 py-3">
           <a href="#hero" className="font-display font-bold text-lg">
-            <span className="text-gradient">&lt;Alex/&gt;</span>
+            <span className="text-gradient">&lt;Fenil/&gt;</span>
           </a>
           <ul className="hidden md:flex items-center gap-7 text-sm">
             {links.map((l) => (

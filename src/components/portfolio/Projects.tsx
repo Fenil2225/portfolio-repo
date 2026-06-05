@@ -1,35 +1,31 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import { Section } from "./Section";
-import p1 from "@/assets/project-1.jpg";
-import p2 from "@/assets/project-2.jpg";
-import p3 from "@/assets/project-3.jpg";
-import p4 from "@/assets/project-4.jpg";
+import p1 from "../../assets/Gear-guard.jpeg";
+import p2 from "../../assets/Eco System.jpeg";
+import p3 from "../../assets/SkyPastel.jpeg";
 
 const projects = [
   {
     img: p1,
-    title: "Nebula Analytics",
-    desc: "Realtime SaaS dashboard with custom query builder and 50+ visualization types.",
-    tech: ["Next.js", "tRPC", "PostgreSQL", "D3"],
+    title: "Gear Guard - Maintenance Management System",
+    desc: "A comprehensive maintenance management system designed to streamline equipment maintenance operations, track maintenance requests, and manage technician teams with a modern React-based frontend.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Radix UI"],
+    repo: "https://github.com/Fenil2225/gear-guardian.git",
   },
   {
     img: p2,
-    title: "Pulse Fitness",
-    desc: "Native-feeling cross-platform fitness app with adaptive AI coaching.",
-    tech: ["React Native", "Expo", "Supabase"],
+    title: "Ecoflow Navigator System",
+    desc: "The ECO Flow Navigator System manages and tracks Engineering Change Orders (ECOs) across products, BOM, components, and operations. It ensures all changes are properly controlled, approved, and consistently implemented throughout the system.",
+    tech: ["React", "TypeScript", "Vite", "shadcn-ui", "Tailwind CSS"],
+    repo: "https://github.com/Fenil2225/ecoflow-navigator.git",
   },
   {
     img: p3,
-    title: "Synth.ai",
-    desc: "Conversational AI workspace with multi-model routing and shared context.",
-    tech: ["Next.js", "OpenAI", "Vercel AI"],
-  },
-  {
-    img: p4,
-    title: "Velocity Store",
-    desc: "Headless e-commerce template with edge-rendered product pages.",
-    tech: ["Astro", "Shopify", "Stripe"],
+    title: "SkyPastel - Flight Booking",
+    desc: "Book Smarter - flights that fit your life. Fast search, flexible fares, hand-picked routes — the right flight, every time.",
+    tech: ["Next.js", "Java Script", "Tailwind CSS", "MySQL", "HTML"],
+    repo: "https://github.com/Fenil2225/SkyPastel-Flight_Booking.git",
   },
 ];
 
@@ -46,7 +42,7 @@ export function Projects() {
             transition={{ duration: 0.5, delay: (i % 2) * 0.1 }}
             className="group relative glass rounded-3xl overflow-hidden hover:shadow-[0_20px_80px_-20px_rgba(180,120,255,0.4)] transition-all duration-500"
           >
-            <div className="aspect-[16/10] overflow-hidden relative">
+            <div className="aspect-[16/10] overflow-hidden relative min-h-[220px]">
               <img
                 src={p.img}
                 alt={p.title}
@@ -55,7 +51,7 @@ export function Projects() {
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-background via-background/30 to-transparent" />
             </div>
             <div className="p-6 -mt-16 relative">
               <h3 className="font-display font-bold text-2xl mb-2">{p.title}</h3>
@@ -72,13 +68,9 @@ export function Projects() {
               </div>
               <div className="flex gap-3">
                 <a
-                  href="#"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-neon-purple hover:text-neon-pink transition-colors"
-                >
-                  <ExternalLink className="h-4 w-4" /> Live demo
-                </a>
-                <a
-                  href="#"
+                  href={p.repo}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Github className="h-4 w-4" /> Source

@@ -53,7 +53,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass text-xs text-muted-foreground mb-6"
         >
           <Sparkles className="h-3.5 w-3.5 text-neon-purple" />
-          Available for freelance — Q3 2026
+          Available for freelance work
         </motion.div>
 
         <motion.h1
@@ -63,7 +63,7 @@ export function Hero() {
           className="font-display font-bold leading-[0.95] tracking-tighter text-5xl sm:text-7xl lg:text-8xl"
         >
           Hey, I'm <br />
-          <span className="text-gradient">Alex Carter.</span>
+          <span className="text-gradient">Fenil Patel.</span>
         </motion.h1>
 
         <motion.p
@@ -95,7 +95,7 @@ export function Hero() {
             <Mail className="h-4 w-4" /> Contact Me
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Fenil2225"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium glass hover:bg-white/10 transition-all"

@@ -6,22 +6,17 @@ const groups = [
   {
     icon: Code2,
     title: "Programming",
-    items: ["TypeScript 95%", "React / Next 92%", "Node.js 88%", "Python 78%", "Rust 65%"],
-  },
-  {
-    icon: Palette,
-    title: "Design",
-    items: ["Figma 94%", "Motion Design 85%", "Design Systems 90%", "Blender 70%"],
+    items: ["TypeScript", "React / Next", "Node.js", "Python"],
   },
   {
     icon: Wrench,
     title: "Tools",
-    items: ["Git 95%", "Docker 82%", "Vite 90%", "Vercel 92%", "Linear 88%"],
+    items: ["Git", "Docker", "Vite", "Vercel", "Linear"],
   },
   {
     icon: Database,
     title: "Backend",
-    items: ["PostgreSQL 86%", "Supabase 90%", "tRPC 84%", "Redis 75%"],
+    items: ["PostgreSQL", "Supabase", "tRPC", "Redis"],
   },
 ];
 
@@ -40,32 +35,18 @@ export function Skills() {
           >
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-neon-purple/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="relative">
-              <div className="inline-flex p-2.5 rounded-xl bg-gradient-to-br from-neon-purple/20 to-neon-blue/20 border border-white/10 mb-4">
+              <div className="inline-flex p-2.5 rounded-xl bg-linear-to-br from-neon-purple/20 to-neon-blue/20 border border-white/10 mb-4">
                 <g.icon className="h-5 w-5 text-neon-purple" />
               </div>
               <h3 className="font-display font-semibold text-lg mb-4">{g.title}</h3>
-              <ul className="space-y-3">
-                {g.items.map((item) => {
-                  const [name, pct] = item.split(/ (\d+%)/);
-                  return (
-                    <li key={name} className="text-sm">
-                      <div className="flex justify-between mb-1">
-                        <span className="text-muted-foreground">{name}</span>
-                        <span className="font-mono text-xs text-neon-blue">{pct}</span>
-                      </div>
-                      <div className="h-1 rounded bg-white/5 overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          whileInView={{ width: pct }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.8, delay: 0.2 }}
-                          className="h-full bg-gradient-to-r from-neon-purple to-neon-blue"
-                        />
-                      </div>
-                    </li>
-                  );
-                })}
-              </ul>
+              <div className="grid gap-3">
+                {g.items.map((item) => (
+                  <div key={item} className="group flex items-center gap-3 rounded-3xl border border-white/10 bg-white/5 px-4 py-3 transition-all hover:-translate-y-1 hover:border-neon-purple/30 hover:bg-white/10">
+                    <span className="flex h-2.5 w-2.5 rounded-full bg-neon-purple transition-all group-hover:scale-110" />
+                    <span className="text-sm font-medium text-muted-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
         ))}

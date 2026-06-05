@@ -14,16 +14,16 @@ import { Preloader } from "@/components/portfolio/Preloader";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Alex Carter — Creative Developer & Designer" },
+      { title: "Fenil Patel — Creative Developer & Designer" },
       {
         name: "description",
         content:
-          "Portfolio of Alex Carter — creative developer crafting fast, beautiful interfaces where design meets engineering.",
+          "Portfolio of Fenil Patel — creative developer crafting fast, beautiful interfaces where design meets engineering.",
       },
-      { property: "og:title", content: "Alex Carter — Creative Developer" },
+      { property: "og:title", content: "Fenil Patel — Creative Developer" },
       {
         property: "og:description",
-        content: "Selected work, experience and contact for Alex Carter.",
+        content: "Selected work, experience and contact for Fenil Patel.",
       },
     ],
   }),

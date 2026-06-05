@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" fill="#f5e6d3" />
+  <rect x="40" y="40" width="1120" height="720" rx="8" fill="none" stroke="#8b6914" stroke-width="3" stroke-dasharray="15,10" />
+  <rect x="80" y="80" width="1040" height="640" rx="4" fill="none" stroke="#c19a6b" stroke-width="2" />
+  <text x="600" y="180" text-anchor="middle" font-family="serif" font-size="48" font-weight="bold" fill="#6b4423">CERTIFICATE OF ACHIEVEMENT</text>
+  <text x="600" y="240" text-anchor="middle" font-family="serif" font-size="20" fill="#8b6914">Proudly Presented to</text>
+  <text x="600" y="310" text-anchor="middle" font-family="serif" font-size="32" font-weight="bold" fill="#3d3d3d">[Your Name]</text>
+  <line x1="250" y1="340" x2="950" y2="340" stroke="#8b6914" stroke-width="2" />
+  <text x="600" y="410" text-anchor="middle" font-family="serif" font-size="18" fill="#6b4423">For successfully participating in the</text>
+  <text x="600" y="445" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#3d3d3d">Odoo Hackathon</text>
+  <text x="600" y="485" text-anchor="middle" font-family="serif" font-size="16" fill="#6b4423">January 2026</text>
+  <text x="150" y="610" font-family="serif" font-size="12" fill="#8b6914">Date: _______________</text>
+  <text x="700" y="610" font-family="serif" font-size="12" fill="#8b6914">Signature: _______________</text>
+  <circle cx="200" cy="700" r="30" fill="none" stroke="#c19a6b" stroke-width="2" />
+  <circle cx="1000" cy="700" r="30" fill="none" stroke="#c19a6b" stroke-width="2" />
+</svg>

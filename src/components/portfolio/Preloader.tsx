@@ -23,7 +23,7 @@ export function Preloader() {
               transition={{ duration: 0.5 }}
               className="text-4xl font-display font-bold text-gradient"
             >
-              &lt;Alex/&gt;
+              &lt;Fenil/&gt;
             </motion.div>
             <div className="w-40 h-px bg-white/10 overflow-hidden">
               <motion.div
