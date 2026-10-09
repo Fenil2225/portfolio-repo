@@ -7,9 +7,21 @@ export function Footer() {
           <span className="ml-2">© {new Date().getFullYear()} — Crafted with caffeine.</span>
         </div>
         <ul className="flex gap-6">
-          <li><a href="#about" className="hover:text-foreground transition-colors">About</a></li>
-          <li><a href="#projects" className="hover:text-foreground transition-colors">Projects</a></li>
-          <li><a href="#contact" className="hover:text-foreground transition-colors">Contact</a></li>
+          <li>
+            <a href="#about" className="hover:text-foreground transition-colors">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className="hover:text-foreground transition-colors">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="hover:text-foreground transition-colors">
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </footer>

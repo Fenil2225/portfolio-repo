@@ -28,7 +28,15 @@ const timeline = [
 
 export function Experience() {
   return (
-    <Section id="experience" eyebrow="Journey" title={<>Experience & <span className="text-gradient">education.</span></>}>
+    <Section
+      id="experience"
+      eyebrow="Journey"
+      title={
+        <>
+          Experience & <span className="text-gradient">education.</span>
+        </>
+      }
+    >
       <div className="relative">
         <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-neon-purple/40 to-transparent" />
         <div className="space-y-12">
@@ -45,9 +53,13 @@ export function Experience() {
             >
               <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-neon-purple ring-4 ring-background animate-glow z-10" />
               <div className="md:w-1/2" />
-              <div className={`flex-1 md:w-1/2 pl-12 md:pl-0 ${i % 2 === 0 ? "md:pl-12" : "md:pr-12 md:text-right"}`}>
+              <div
+                className={`flex-1 md:w-1/2 pl-12 md:pl-0 ${i % 2 === 0 ? "md:pl-12" : "md:pr-12 md:text-right"}`}
+              >
                 <div className="glass rounded-2xl p-6 hover:bg-white/6 transition-colors">
-                  <div className={`flex items-center gap-2 mb-2 ${i % 2 === 0 ? "" : "md:justify-end"}`}>
+                  <div
+                    className={`flex items-center gap-2 mb-2 ${i % 2 === 0 ? "" : "md:justify-end"}`}
+                  >
                     <t.icon className="h-4 w-4 text-neon-blue" />
                     <span className="text-xs font-mono text-neon-blue">{t.year}</span>
                   </div>

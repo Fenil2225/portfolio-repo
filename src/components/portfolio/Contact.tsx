@@ -76,7 +76,15 @@ export function Contact() {
   };
 
   return (
-    <Section id="contact" eyebrow="Contact" title={<>Let's build <span className="text-gradient">something.</span></>}>
+    <Section
+      id="contact"
+      eyebrow="Contact"
+      title={
+        <>
+          Let's build <span className="text-gradient">something.</span>
+        </>
+      }
+    >
       <div className="grid lg:grid-cols-5 gap-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,7 +94,8 @@ export function Contact() {
           className="lg:col-span-2 space-y-6"
         >
           <p className="text-muted-foreground leading-relaxed">
-            I'm currently taking on freelance work. Send a message and I'll get back within 24 hours.
+            I'm currently taking on freelance work. Send a message and I'll get back within 24
+            hours.
           </p>
           <div className="space-y-4">
             <a href="tel:+916355644942" className="flex items-center gap-3 group">
@@ -195,7 +204,9 @@ export function Contact() {
             disabled={submitting || sent}
             className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium bg-linear-to-r from-neon-purple via-neon-pink to-neon-blue text-primary-foreground hover:glow-purple transition-all disabled:opacity-70"
           >
-            {sent ? "Message sent — thanks!" : (
+            {sent ? (
+              "Message sent — thanks!"
+            ) : (
               <>
                 {submitting ? "Sending..." : "Send message"} <Send className="h-4 w-4" />
               </>

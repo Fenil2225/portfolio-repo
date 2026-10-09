@@ -2,15 +2,19 @@ import { motion } from "framer-motion";
 import { Section } from "./Section";
 import profile from "../../assets/profile.jpeg";
 
-const skills = [
-  "Frontend Developer",
-  "UI/UX Design",
-  "Backend & APIs",
-];
+const skills = ["Frontend Developer", "UI/UX Design", "Backend & APIs"];
 
 export function About() {
   return (
-    <Section id="about" eyebrow="About" title={<>The person <span className="text-gradient">behind the pixels.</span></>}>
+    <Section
+      id="about"
+      eyebrow="About"
+      title={
+        <>
+          The person <span className="text-gradient">behind the pixels.</span>
+        </>
+      }
+    >
       <div className="grid md:grid-cols-2 gap-10 items-start">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -46,9 +50,9 @@ export function About() {
           className="md:col-span-1 space-y-6"
         >
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I'm a creative web developer based in Ahmedabad, focused on building clean,
-            responsive, and user-friendly websites. I enjoy turning ideas into real digital
-            experiences — from simple landing pages to functional web applications.
+            I'm a creative web developer based in Ahmedabad, focused on building clean, responsive,
+            and user-friendly websites. I enjoy turning ideas into real digital experiences — from
+            simple landing pages to functional web applications.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             I work with modern web technologies and continuously improve my skills by building
@@ -56,12 +60,15 @@ export function About() {
             perform smoothly and provide a great user experience.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            If you're looking for someone reliable who can bring your ideas to life and grow
-            with your project, I'd love to work together.
+            If you're looking for someone reliable who can bring your ideas to life and grow with
+            your project, I'd love to work together.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             {skills.map((skill) => (
-              <span key={skill} className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium">
+              <span
+                key={skill}
+                className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium"
+              >
                 {skill}
               </span>
             ))}
